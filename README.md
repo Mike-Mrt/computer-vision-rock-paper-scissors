@@ -1,6 +1,6 @@
 # Computer Vision - Rock, Paper Scissors (RPS)
 
-> Rock, paper, scissors is a classic game in which a player decides to choose rock, paper or scissors at the time of reveal - the rock beats scissors, paper beats rock and scissors beats paper. 
+Rock, paper, scissors is a classic game in which a player decides to choose rock, paper or scissors at the time of reveal - the rock beats scissors, paper beats rock and scissors beats paper. 
 
 This will be an implementation of the RPS game where a player plays against the computer through the use of the computer camera. 
 
