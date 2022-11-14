@@ -8,7 +8,7 @@ This will be an implementation of the RPS game where a player plays against the 
 
 In milestone 2 the task was to create a computer vision system (also known as a model) - that detects whether the player is showing rock, paper or scissors to the camera. To do this:
 - Teachable Machine was used to have 4 options: Rock, Paper, Scissors and Nothing and the model was trained to recognise whenever these 4 options were chosen by the user. 
-- The more images that were taken the better the model so I iteratively trained the model till I was satisfied that it would recognise each of the 4 options with 100% accuracy.
+- The more images that were taken the better the model so I iteratively trained the model till I was satisfied that it would recognise each of the 4 options with as much accuracy as possible.
 - The model will be used to ensure that the player input through the camera will be recognised without issues so that the player can play against the randomly chosen option by the computer.
 - There was no code for this section of the project.
 
