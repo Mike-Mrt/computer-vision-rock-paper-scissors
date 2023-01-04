@@ -12,20 +12,34 @@ In milestone 2 the task was to create a computer vision system (also known as a 
 - The model will be used to ensure that the player input through the camera will be recognised without issues so that the player can play against the randomly chosen option by the computer.
 - There was no code for this section of the project.
 
-## Milestone 2
+## Milestone 4
 
-- Does what you have built in this milestone connect to the previous one? If so explain how. What technologies are used? Why have you used them? Have you run any commands in the terminal? If so insert them using backticks (To get syntax highlighting for code snippets add the language after the first backticks).
-
-- Example below:
-
-```bash
-/bin/kafka-topics.sh --list --zookeeper 127.0.0.1:2181
-```
-
-- The above command is used to check whether the topic has been created successfully, once confirmed the API script is edited to send data to the created kafka topic. The docker container has an attached volume which allows editing of files to persist on the container. The result of this is below:
+This Milestone was to create a Rock-Paper-Scissors game.
+- Initially, 2 functions were created: one was to random generate an option between RPS for the computer choice and the other was to creat a function which took in user input for the RPS game.
+- A 3rd function was created to run the logic of the game - using if/elif/else statements a function was crated which took in the inputs of the computer and user and compared these to provide various outputs. 
+- Finally, a single function called play was created which encompassed all the other functions into 1. This function could now be called to run and play the game of Rock-Paper-Scissors.
 
 ```python
-"""Insert your code here"""
+def play():
+    # Asking for user input and storing it
+    user_choice =  input('Please choose between Rock, Paper and Scissors: ')
+    
+    # Generating random computer input and storing it 
+    computer_choice = random.choice(['Rock', 'Paper', 'Scissors'])
+    
+    # Control flow generated for RPS game
+    if computer_choice == user_choice:
+        print('It is a tie!')
+    elif computer_choice == 'Rock' and user_choice == 'Scissors':
+        print('You lost')
+    elif computer_choice == 'Paper' and user_choice == 'Rock':
+        print('You lost')
+    elif computer_choice == 'Scissors' and user_choice == 'Paper':
+        print('You lost')
+    else:
+        print('You won!')
+
+play()
 ```
 
 > Insert screenshot of what you have built working.
