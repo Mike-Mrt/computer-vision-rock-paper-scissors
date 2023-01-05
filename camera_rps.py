@@ -15,8 +15,7 @@ def get_computer_choice():
 
 # A function which opens the camera, waits 5 seconds from start, obtains the prediction with the highest probability and returns the users choice accordingly
 def get_prediction():
-    x=True
-    while x:
+    while True:
         start=time.time()
         end=0
         while end - start <=5:
@@ -43,8 +42,10 @@ def get_prediction():
 # Function which initiates the game and includes the above 2 functions. 
 # Keeps track of the scores and a hand is played every 5 seconds. 
 def play_RPS():
-    computer_wins=0
-    user_wins=0
+    computer_wins = 0
+    
+    user_wins = 0
+    
     while computer_wins<=2 and user_wins<=2:
         computer_choice = get_computer_choice()
         print(computer_choice)
@@ -69,8 +70,5 @@ def play_RPS():
             print('You won!')
             user_wins+=1
             print(f"The scores are, computer: {computer_wins} and player: {user_wins}")
-
-    print(computer_wins)
-    print(user_wins)
 
 play_RPS()
