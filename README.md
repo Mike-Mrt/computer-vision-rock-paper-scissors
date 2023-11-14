@@ -42,7 +42,6 @@ def play():
 play()
 ```
 
-> Insert screenshot of what you have built working.
 
 ## Milestone 5
 
